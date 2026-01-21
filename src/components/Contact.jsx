@@ -1,13 +1,14 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
+
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -66,16 +67,14 @@ const Contact = () => {
 
   return (
     <div>
-
-            <motion.div className="mb-12">
-              <p className={`${styles.sectionSubText} uppercase`}>
-              Have Anything in mind?
-              </p>
-              <h2 className={`${styles.sectionHeadText}`}>
-              Get in touch
-              </h2>
-            </motion.div>
-
+    <motion.div className="mb-12">
+      <p className={`${styles.sectionSubText} uppercase`}>
+        Have Anything in mind?
+      </p>
+      <h2 className={`${styles.sectionHeadText}`}>
+        Get in touch
+      </h2>
+    </motion.div>
     <div
       className={`xl:mt-4 flex xl:flex-row flex-col-reverse gap-12 overflow-hidden`}>
 
@@ -98,7 +97,6 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="Enter your name"
               className='bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-sm outline-none border-none font-medium'
             />
           </label>
@@ -109,7 +107,6 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="Enter your email"
               className='bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-sm outline-none border-none font-medium'
             />
           </label>
@@ -120,7 +117,6 @@ const Contact = () => {
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='Your message'
               className='bg-tertiary py-3 px-3 placeholder:text-secondary text-white rounded-sm outline-none border-none font-medium'
             />
           </label>

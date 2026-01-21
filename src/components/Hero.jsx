@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { Typewriter } from "react-simple-typewriter";
 
+
+
 const Hero = () => {
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -19,11 +21,8 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>SHAGAR</span>
           </h1>
-          {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Full Stack Developer
-          </p> */}
           {/*  */}
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 mb-6 text-white-100`}>
               <Typewriter
                 words={[
                   "A Passionate Software Engineer",
@@ -41,9 +40,11 @@ const Hero = () => {
                     deleteSpeed={20} // Speed of deleting text
                     delaySpeed={1500} // Delay before starting next word
                 />
-            </p>
-          {/*  */}
-        </div>
+          </p>
+
+          {/* contact me */}
+
+      </div>
       </div>
 
       <ComputersCanvas />

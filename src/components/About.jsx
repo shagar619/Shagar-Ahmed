@@ -1,7 +1,5 @@
-import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -79,6 +77,9 @@ const About = () => {
         className='mt-3 text-secondary text-[17px] leading-[30px] mb-8'>Hi, I’m a passionate and detail-oriented Full Stack Web Developer specializing in the MERN stack (MongoDB, Express.js, React, Node.js). With a strong foundation in software engineering and a deep love for clean, efficient code, I thrive on turning complex problems into elegant, user-friendly solutions.I’m driven by curiosity and a constant desire to learn, build, and innovate. Whether I’m developing a responsive front-end interface or crafting robust back-end architecture, I aim to create seamless digital experiences that make a real impact.
         Let’s build something great together!🚀</motion.p>
 
+
+
+      {/* Contact me */}
       <div className="flex items-center gap-6">
         <div>
           <motion.h1
@@ -159,7 +160,6 @@ const About = () => {
       </div>
 
       <button onClick={()=>handleDownloadResume(resumeLink)} target='_blank'   className="inline-flex justify-center mt-4 hover:bg-purple-600  hover:border-purple-600 hover:shadow-2xl hover:shadow-purple-600 hover:text-white/80 text-white/90 font-semibold hover:text-white py-2 lg:px-4 px-2 border  rounded duration-150  items-center gap-x-1  "><FaCloudDownloadAlt className='mr-2' /> Resume</button>
-
       </motion.div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
