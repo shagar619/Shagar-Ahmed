@@ -13,6 +13,7 @@ import resumePdf from './../assets/Full-Stack-Developer.pdf';
 
 
 
+
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
